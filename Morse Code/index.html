@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Morse Code Translator</title>
+</head>
+
+<body>
+    <header>
+        <img src="images\morse-code.png" alt="logo">
+        <h1>Morse Code Translator</h1>
+    </header>
+    <main>
+        
+        <div class="container">
+            <div class="left">
+                <p>This page both encrypts and decrypts from english to morse code and vice-versa.Feel free to check it out!</p>
+            </div>
+            <div class="right">
+                <h2>Characters it supports</h2>
+                <p>It supports all the <span> english alphabets </span>, all <span> numbers </span> and some <span> special characters </span> which are : . , "," , ? , ' , ! , / , ( , ) , & , : , ; , = , + , - , _ , " , $ , @</p>
+            </div>
+        </div>
+        <div class="container">
+            <!-- english to morse code translator  -->
+            <div class="left">
+                <h3>English to Morse Code</h3>
+                <input type="text" id="english" placeholder="Enter Your Text here.">
+                <button onclick="encrypt()">ENCRYPT</button>
+                <textarea id="answerMorse" cols="30" rows="10"></textarea>
+            </div>
+
+            <!-- morse code to english translator -->
+            <div class="right">
+                <h3>Morse code to English</h3>
+                <input type="text" id="morse" placeholder="Enter Your Code here." >
+                <button onclick="decrypt()">DECRYPT</button>
+                <textarea id="answerEnglish" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </main>
+</body>
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- custom js  -->
+<script src="js/script.js"></script>
+
+</html>
